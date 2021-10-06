@@ -1,0 +1,15 @@
+@mixin flex-row($pos: space-around){
+    display: flex;
+    justify-content:$pos;
+    align-items: center;
+}
+@mixin flex-column($pos: space-around){
+    display: flex;
+    justify-content:$pos;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin center{
+    position: relative;
+    margin: 0 auto;
+}
