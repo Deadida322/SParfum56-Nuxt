@@ -472,7 +472,7 @@ section.shop {
     *{
         margin: 1em;
     }
-    input[type='button']{
+    button{
         outline: none;
         border: none;
         padding: .5em 1em;
@@ -502,7 +502,7 @@ section.shop {
 }
 
 .modal{
-    transition: $transition;
+    transition: opacity .2s ease-in;
     @include flex-column;
     position: fixed;
     top: 0;
@@ -515,7 +515,7 @@ section.shop {
         z-index: 999;
     }
     .modal_background{
-        transition: $transition;
+        transition: opacity .2s ease-in;
         background-color: rgba(0, 0, 0, 0.24);
         position: absolute;
         top: 0;
@@ -524,5 +524,39 @@ section.shop {
         height: 100%;
         backdrop-filter: blur(3px);
         cursor: pointer;
+    }
+}
+
+.cart_container{
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    width: 10em;
+    height: 2em;
+}
+
+
+.auth_container{
+    @include flex-row;
+    height: 100vh;
+    margin-top: -5em;
+}
+
+
+.invalid{
+            
+    border-bottom: 2px solid $bg_red !important;
+}
+
+
+.admin_page{
+    @include flex-column;
+    padding: 2em;
+    justify-content: left;
+    align-items: flex-start;
+
+    .admin_header{
+        font-size: 1.2em;
+        color: $bg_orange;
     }
 }

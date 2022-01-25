@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style>
-    .home-enter-active, .home-leave-active { transition: all .2s; }
+    .home-enter-active, .home-leave-active { transition: transform .2s ease-in; }
     .home-enter, .home-leave-active { 
         opacity: 0;
         transform: scale(1.1);

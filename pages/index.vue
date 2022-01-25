@@ -3,14 +3,13 @@
     <Modal
       v-show="show_modal"
       @showModal="showModal()"/>
-    <div>
-      <Carousels :items="items" :images="images"/>
-    </div>
+    <Carousels :items="items" :images="images"/>
     <Comments @show_modal="showModal()" :comments="comments"/>
     <Shop :products="products"/>
     <OrderInfo/>
     <Map/>
     <Footer/>
+    <Cart/>
   </div>
 </template> 
 
@@ -23,7 +22,7 @@ import OrderInfo from  '@/components/main/OrderInfo'
 import Map from '@/components/main/Map'
 import Footer from '@/components/main/Footer'
 import Modal from '@/components/UI/Modal'
-
+import Cart from '@/components/cart/Cart.vue'
 export default {
   components:{
     Carousels,
@@ -32,7 +31,8 @@ export default {
     OrderInfo,
     Map,
     Footer,
-    Modal
+    Modal,
+    Cart
   },
   methods:{
     showModal(){
@@ -41,7 +41,7 @@ export default {
   },
   data(){
     return{
-      show_modal: true,
+      show_modal: false,
       images:[
         'img/1.jpg',
         'img/2.jpg',
