@@ -28,9 +28,10 @@ export default {
         "assets/styles/main.scss",
 
     ],
-    serverMiddleware: {
-        '/api': '~/api'
-    },
+    // serverMiddleware: {
+    //     '/api': '~/api'
+    // },
+
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,14 +52,14 @@ export default {
     ],
     plugins: [
         { src: '~plugins/vue-carousel', ssr: false },
-        { src: '~plugins/vuelidate'}
+        { src: '~plugins/vuelidate' }
     ],
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         '@nuxtjs/axios',
         'cookie-universal-nuxt'
     ],
-    
+
 
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
