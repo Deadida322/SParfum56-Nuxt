@@ -1,6 +1,7 @@
 {
     "port": 5000,
     "email": "1davidios1@gmail.com",
-    "password": "davidavi"
+    "password": "davidavi",
+    "mongourl": "mongodb+srv://1davidios1:davidavi@cluster0.wxfdi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 }
